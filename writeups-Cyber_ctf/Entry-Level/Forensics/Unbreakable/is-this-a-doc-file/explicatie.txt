@@ -27,7 +27,7 @@ Explicatie:
 2. sa putem gasi raspunsul la acest challenge in toate aceste fisiere si foldere, e sa analizam 
    si sa cautam fiecare folder si fisier si sa citim ce ne trasmite fiecare din aceste parte
 
-3. Am constat ca la folderul word/embeddings
+3. Am constatat ca la folderul word/embeddings
     Vedem ceva cu Microsoft_PowerPoint_Presentation.pptx 
     Stiind ca e in powerpoint, trebuie sa vedem ce contine
 
