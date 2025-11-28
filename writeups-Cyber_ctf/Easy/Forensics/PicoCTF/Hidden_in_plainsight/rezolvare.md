@@ -6,14 +6,14 @@ Rezolvare:
 1. vedem ca ne da o idee precum sa descarcam imaginea si sa citim metadatele
    Noi il descarcam, deschidem imaginea cu comanda:
 
-                                            xdg-open img.jpg
+                         xdg-open img.jpg
 
    Si observam o imagine smechera, ceva de codare, cu un stil negru cu multe coduri si numere, analizand atent nu avem nici-o informatie
 
 
 2. Sa dam seama ce trebuie sa facem la imagine e sa folosim comanda:
 
-                                       strings img.jpg | head
+                      strings img.jpg | head
 
    Ne afiseaza asta:
 
@@ -41,7 +41,7 @@ stU*
 
 Nimic important aici, si asa am decis sa folosim si comanda:
 
-                                                 exiftool img.jpg
+                      exiftool img.jpg
 Si ne afiseaza:
 
 ExifTool Version Number         : 13.25
@@ -73,22 +73,22 @@ Megapixels                      : 0.410
 
 Observam ca la comment avem un sir ciudat asa cum putem spune, si se vede cu ochiul liber ca ascunde mesaj secret
 
-                                         Comment                         : c3RlZ2hpZGU6Y0VGNmVuZHZjbVE9
+         Comment                         : c3RlZ2hpZGU6Y0VGNmVuZHZjbVE9
 
 3. Dupa analizele mele observ ca e codat in Base64. si asa am decis sa il decodam mesajul acela cu urmatoarea comanda:
  
-                                              echo -n "c3RlZ2hpZGU6Y0VGNmVuZHZjbVE9" | base64 -d 
+                     echo -n "c3RlZ2hpZGU6Y0VGNmVuZHZjbVE9" | base64 -d 
 
     Si ne afiseaza: 
    
-                                               steghide:cEF6endvcmQ=                                                                                                                               
+                         steghide:cEF6endvcmQ=                                                                                                                               
 
    Dupa cum vedem ne-a decodificat si ne-a afisat: steghide:cEF6endvcmQ=
 
 4. mesajul e decodificat dar nu tot, vedem ca a mai ramas o parte sa decodificam si tot in base64, 
    folosim iar comanda aceea ca ceea din interioara:
 
-                                        echo -n "cEF6endvcmQ=" | base64 -d
+                       echo -n "cEF6endvcmQ=" | base64 -d
 
     Ne afiseaza:
 
@@ -100,8 +100,8 @@ Observam ca la comment avem un sir ciudat asa cum putem spune, si se vede cu och
  
 
 5. unealta pe care il putem folosi ar fi steghide.
-                    
-                                                        steghide extract -sf img.jpg
+ 
+                            steghide extract -sf img.jpg
 
    Ne afiseaza:
  
