@@ -47,7 +47,10 @@ Rezolvare:
 
 3. Daca observam bine, avem ceva la SystemInfo, poate acolo ne ofera ceva informatii sa putem raspunde la intrebarile de mai sus
    la directorul acela vedem ca la comanda: 
-                            cat SystemInfo/output.txt
+                           
+                           
+                             cat SystemInfo/output.txt
+   
    Ne afiseaza:
 
 ...
@@ -61,9 +64,9 @@ Network Card(s):           1 NIC(s) Installed.
                                  [02]: fe80::2044:1feb:98c2:a511
 Hyper-V Requirements:      A hypervisor has been detected. Features required for Hyper-V will not be displayed.
                                  
-      Si vedem ip-ul computeru-lui, care ar fi:
+Si vedem ip-ul computeru-lui, care ar fi:
                   
-                        10.0.8.16  ---> Raspunsul la intrebarea Q2  
+                       10.0.8.16  ---> Raspunsul la intrebarea Q2  
 
 Si analizand din informatiile de acolo, vedem ca nu mai gasim vreo solutie
 la celelalte intrebari ramase, ramane de a mai analiza si la celelalte.
@@ -107,14 +110,14 @@ Vedem din start ca scrierea e gresita, dar e si lipsa de comanda necompletata
 
 Al doilea, si al treilea tot e gresit
 
-                                           2.procdump64.exe -s -d -i lsass.exe
+                               2.procdump64.exe -s -d -i lsass.exe
 
 Si aceasta comanda este incorectă și nu va face ce îți dorești (adică să-ți instaleze un driver persistent pentru a dump-ui LSASS ori de câte ori vrei, fără să mai 
 ai nevoie de procdump rulând).
 
 comanda corecta din ceea ce vedem este aceasta: 
                    
-                                                    procdump64.exe -ma lsass.exe lsass.txt
+                                procdump64.exe -ma lsass.exe lsass.txt
 
 Deci bagare de seama comenzile si cerintele autorului pentru a putea raspunde la intrebari.
 
@@ -129,9 +132,10 @@ Deci bagare de seama comenzile si cerintele autorului pentru a putea raspunde la
 
    aici gasim si comanda care enumera toti utilizatori, tinand cont ca acela ar fi "net user", "whoami", "wmic" ...,
    
-                Acum sa ne putem confirma sa fie ceea corecta e sa folosim comanda:
+   Acum sa ne putem confirma sa fie ceea corecta e sa folosim comanda:
  
-         strings ConsoleHost_history.txt | grep -iE "(net user|wmic|whoami)"
+        
+                strings ConsoleHost_history.txt | grep -iE "(net user|wmic|whoami)"
 
 
 Afiseaza: net users
