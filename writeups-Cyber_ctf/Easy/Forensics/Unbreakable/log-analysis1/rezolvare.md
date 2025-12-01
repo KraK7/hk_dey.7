@@ -56,14 +56,14 @@ Noi trebuie doar sa gasim raspunsurile la urmatoarele intrebari:
 
 ...
 
-Network Card(s):           1 NIC(s) Installed.
+                           Network Card(s):           1 NIC(s) Installed.\
                            [01]: Intel(R) 82574L Gigabit Network Connection\
                                  Connection Name: Ethernet0\
                                  DHCP Enabled:    No\
                                  IP address(es)\
                                  [01]: 10.0.8.16\
                                  [02]: fe80::2044:1feb:98c2:a511\
-                           Hyper-V Requirements:     A hypervisor has been detected. Features required for Hyper-V will not be displayed.
+                           Hyper-V Requirements:   A hypervisor has been detected. Features required for Hyper-V will not be displayed.
                                  
 
 Si vedem ip-ul computeru-lui, care ar fi:
