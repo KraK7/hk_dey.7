@@ -41,11 +41,15 @@ Ne afiseaza:
  
  EXEMPLU:
  Comanda 1:
+
               echo -n "malware-sample" | sha256sum
+
 1a5c2f8782e1fb86c5ffc3c090fdc2fa45c23040f72716003f790d1132c2f48d  -
 
   Comanda 2:
+
               sha256sum "malware-sample"
+
 4c1dc737915d76b7ce579abddaba74ead6fdb5b519a1ea45308b8c49b950655c  malware-sample
 
 ---
