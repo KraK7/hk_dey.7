@@ -51,5 +51,5 @@ VirusTotal = Poliția digitală
 TLDR: SHA256 e amprenta, VirusTotal e poliția, Trojan e mincinosul! 🚨
 
 
-!!! Generat si gandit de AI, totul pe explicatia fiecarui persoane!!!
+!!! Generat de AI!!!
 
