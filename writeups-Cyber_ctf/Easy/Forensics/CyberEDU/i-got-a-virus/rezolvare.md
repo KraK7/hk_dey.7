@@ -21,6 +21,8 @@ mediu **SANDBOX** la intreaga provocare, si putem rezolva doar folosind **VirusT
    eșantionul de malware dat? 
      (Puncte: 100)
 
+---
+
 1. La prima intrebare ne spune, care este SHA256 al dosarului dat?
    Sa stim care este SHA256 putem folosi comanda aceasta:
  
@@ -54,7 +56,7 @@ Ne afiseaza:
    Dupa ce am inserat, observam ca ne apare acolo pe "Popular threat label" si in dreapta vedem "Family labels"
    Si acolo ne spune ca sunt **petya**, **petr** si **diskcoder**, asa ca il lu-am pe prima varianta si acela ar fi raspuns-ul: petya
 
-        **Petya** ---> raspuns la intrebarea Q2
+          Petya ---> raspuns la intrebarea Q2
 
 3. La a treia intrebare ne spune ce tip de malware este folosit pentru analiza?
    Ca analiza de malware a fost folosita, e sa observam tot de pe **VirusTotal** ca acolo ne spune 
@@ -62,20 +64,20 @@ Ne afiseaza:
    ca vedem si mai jos ca cam trojan e cel mai folosit, cum ar fi: (Trojan.Win32, Trojan.ransom.UAC, TRJ/WLT.b, etc..)
    si acela ar fi raspuns-ul: Trojan
   
-      **Trojan** ---> raspuns la intrebarea Q3
+        Trojan ---> raspuns la intrebarea Q3
 
 4. La a patra intrebare ne spune sa furnizam data creari a unui fisier rau intentionat, asa cum este prezentat in **VirusTotal**
    Sa putem da seama care este prezentat in **VirusTotal** si sa gasim data creari e sa accesam la "Details" si mai jos la "History"
    vedem ca la "Creation Time" ne afiseaza data creari, (Creation Time: 2016-01-30 02:56:43 UTC)  
    
-     **2016-01-30 02:56:43 UTC** ---> raspuns la intrebarea Q4
+        2016-01-30 02:56:43 UTC ---> raspuns la intrebarea Q4
 
 5. La ultima intrebare ne spune ca, care ar fi ip-ul rau intetionat care a fost marcat ca rau intentionat utilizat de esantiorul de malware
    Sa putem afla ip-ul acela, ar trebui sa analizam tot pe **VirusTotal** la **Relations**
    si mai jos la **Contacted IP addresses** vedem ca is vreo 45 de ip-uri, dar cel mai relevant raspuns ar fi prima optiune intotdeauna de luat
    iar acela ar fi: 13.107.4.53
 
-    **13.107.4.53** ---> raspuns la intrebarea Q5
+        13.107.4.53 ---> raspuns la intrebarea Q5
 ---
 ### SUCCES !!!! :))))
 ---
