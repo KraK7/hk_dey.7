@@ -19,7 +19,7 @@ Rezolvare:
 
 4. parola ar fi:
 
-               password : nZ^&@q5&sjJHev
+                   password : nZ^&@q5&sjJHev
 
 
 5. Cu parola aflata introducem acolo si ne afiseaza urmatorul mesaj:
