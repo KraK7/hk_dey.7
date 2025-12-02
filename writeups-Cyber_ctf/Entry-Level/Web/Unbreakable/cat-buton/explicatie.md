@@ -6,27 +6,27 @@ Rezolvare:
 
 Sa putem rezolva aceasta problema, e sa accesam adresa si sa vedem ce ne afiseaza, 
 Observam ca e un site video cu o pisica plutind  prin aer, si cateva informati dar vedem ca avem un buton 
-mai jos care scrie "Reveal secret", il accesam si vedem: 
-                        Ya' cookie tells me you're not an admin.
+mai jos care scrie *"Reveal secret"*, il accesam si vedem: 
+                               Ya' cookie tells me you're not an admin.
 si cu adresa care duce la un alt folder precum: 
-                         /secret.php
+                                 /secret.php
 
 1. vedem ca cooki-ul ne spune ca nu suntem admin, e sa analizam putin site-ul
 
 2. folosim aceasta comanda:
-                        curl http://34.185.167.212:32394/secret.php
+                              curl http://34.185.167.212:32394/secret.php
 Ne afiseaza: 
-                        Ya' cookie tells me you're not an admin.
+                               Ya' cookie tells me you're not an admin.
 
 3. folosind comanda curl -I http://34.185.167.212:32394/secret.php
 
 Ne afiseaza:             
 
-HTTP/1.1 200 OK
-Date: Fri, 21 Nov 2025 06:50:07 GMT
-Server: Apache
-Set-Cookie: secret=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhZG1pbiI6ZmFsc2V9.k2RUNg6FlRlfDjQUAQmDzPLrzZL0_sarBgiWtNr4cpE; expires=Fri, 21-Nov-2025 06:55:07 GMT; Max-Age=300; path=/
-Content-Type: text/html; charset=UTF-8
+                               HTTP/1.1 200 OK
+                               Date: Fri, 21 Nov 2025 06:50:07 GMT
+                               Server: Apache
+                               Set-Cookie: secret=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhZG1pbiI6ZmFsc2V9.k2RUNg6FlRlfDjQUAQmDzPLrzZL0_sarBgiWtNr4cpE; expires=Fri, 21-Nov-2025 06:55:07 GMT; Max-Age=300; path=/
+                             Content-Type: text/html; charset=UTF-8
 
 
 vazand ca la Set-Cookie: secret=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhZG1pbiI6ZmFsc2V9.k2RUNg6FlRlfDjQUAQmDzPLr>
